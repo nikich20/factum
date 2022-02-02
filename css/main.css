@@ -1,0 +1,26 @@
+.navbar {
+    background: #34547A;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.factum {
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+
+.factum .desc p {
+    line-height: 1.5;
+}
+
+.about, .schedule, .arrange, .footer {
+    background: #34547A;
+    color: #FFFFFF;
+}
+
+.table {
+    background: rgb(214, 214, 231);
+}
