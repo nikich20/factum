@@ -24,3 +24,16 @@
 .table {
     background: rgb(214, 214, 231);
 }
+
+.slick-prev {
+    left: 5px;
+    /* background: red; */
+    /*to notice it, is white*/
+    z-index: 1;
+}
+
+.slick-next {
+    right: 5px;
+    /* background: red; */
+    /*to notice it, is white*/
+}
