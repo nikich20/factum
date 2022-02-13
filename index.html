@@ -215,7 +215,8 @@
   <div class="arrange" id="register">
     <div class="container py-5">
       <h2 class="text-center pb-4">ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</h2>
-      <form class="row g-2 justify-content-center">
+      <form class="row g-2 justify-content-center" name="contact" method="POST" data-netlify-recaptcha="true"
+        data-netlify="true">
         <div class="col-md-4">
           <label for="inputName" class="form-label">Ф.И.О. ребенка</label>
           <input type="text" class="form-control" id="inputName">
@@ -240,11 +241,10 @@
           <label for="inputEmail" class="form-label">E-mail</label>
           <input type="email" class="form-control" id="inputEmail">
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <div class="col-12 pt-3">
           <div class="text-center">
-            <a href="file:///C:/Users/Никита/Desktop/factum/registration.html">
-              <button type="submit" class="btn btn-primary">ЗАПИСАТЬСЯ</button>
-            </a>
+            <button type="submit" class="btn btn-primary">ЗАПИСАТЬСЯ</button>
           </div>
         </div>
       </form>
