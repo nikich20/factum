@@ -215,31 +215,49 @@
   <div class="arrange" id="register">
     <div class="container py-5">
       <h2 class="text-center pb-4">ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</h2>
-      <form class="row g-2 justify-content-center" name="contact" method="POST" action="/register.html"
-        data-netlify-recaptcha="true" data-netlify="true">
+      <form class="row g-2 justify-content-center needs-validation" name="contact" method="POST" action="/register.html"
+        data-netlify-recaptcha="true" data-netlify="true" novalidate>
         <div class="col-md-4">
           <label for="inputName" class="form-label">Ф.И.О. ребенка</label>
-          <input type="text" class="form-control" id="inputName" name="name">
+          <input type="text" class="form-control" id="inputName" name="name" required>
+          <div class="invalid-feedback">
+            Пожалуйста укажите имя ребенка.
+          </div>
         </div>
         <div class="col-md-3">
           <label for="inputBirth" class="form-label">Дата рождения</label>
-          <input type="date" class="form-control" id="inputBirth" name="birth">
+          <input type="date" class="form-control" id="inputBirth" name="birth" required>
+          <div class="invalid-feedback">
+            Пожалуйста укажите дату рождения ребенка.
+          </div>
         </div>
         <div class="col-md-4">
-          <label for="inputExperience" class="form-label">Стаж занятия</label>
-          <input type="text" class="form-control" id="inputExperience" name="experience">
+          <label for="inputExperience" class="form-label">Стаж занятий</label>
+          <input type="text" class="form-control" id="inputExperience" name="experience" required>
+          <div class="invalid-feedback">
+            Пожалуйста укажите сколько ребенок уже занимается футболом.
+          </div>
         </div>
         <div class="col-md-4">
           <label for="inputParent" class="form-label">Ф.И.О. родителя</label>
-          <input type="text" class="form-control" id="inputParent" name="parent">
+          <input type="text" class="form-control" id="inputParent" name="parent" required>
+          <div class="invalid-feedback">
+            Пожалуйста укажите имя родителя.
+          </div>
         </div>
         <div class="col-md-3">
           <label for="inputMobile" class="form-label">Телефон</label>
-          <input type="text" class="form-control" id="inputMobile" name="mobile">
+          <input type="text" class="form-control" id="inputMobile" name="mobile" required>
+          <div class="invalid-feedback">
+            Пожалуйста укажите мобильный телефон.
+          </div>
         </div>
         <div class="col-md-4">
           <label for="inputEmail" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="inputEmail" name="email">
+          <input type="email" class="form-control" id="inputEmail" name="email" required>
+          <div class="invalid-feedback">
+            Пожалуйста укажите e-mail.
+          </div>
         </div>
         <div class="col-md-11">
           <div class="text-center">
@@ -281,7 +299,7 @@
       <footer class="d-flex border-top"></footer>
       <div class="d-flex justify-content-between py-2">
         <p>© 2022 ФК "ОЛИМП ФАКТУМ"</p>
-        <ul class="list-unstyled d-flex">
+        <!-- <ul class="list-unstyled d-flex">
           <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
                 <use xlink:href="#whatsapp"></use>
               </svg></a></li>
@@ -291,7 +309,7 @@
           <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
                 <use xlink:href="#vk"></use>
               </svg></a></li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </div>
@@ -309,6 +327,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/validate-forms.js"></script>
 </body>
 
 </html>
