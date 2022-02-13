@@ -215,31 +215,31 @@
   <div class="arrange" id="register">
     <div class="container py-5">
       <h2 class="text-center pb-4">ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</h2>
-      <form class="row g-2 justify-content-center" name="contact" method="POST" data-netlify-recaptcha="true"
-        data-netlify="true">
+      <form class="row g-2 justify-content-center" name="contact" method="POST" action="/register.html"
+        data-netlify-recaptcha="true" data-netlify="true">
         <div class="col-md-4">
           <label for="inputName" class="form-label">Ф.И.О. ребенка</label>
-          <input type="text" class="form-control" id="inputName">
+          <input type="text" class="form-control" id="inputName" name="name">
         </div>
         <div class="col-md-3">
           <label for="inputBirth" class="form-label">Дата рождения</label>
-          <input type="date" class="form-control" id="inputBirth">
+          <input type="date" class="form-control" id="inputBirth" name="birth">
         </div>
         <div class="col-md-4">
           <label for="inputExperience" class="form-label">Стаж занятия</label>
-          <input type="text" class="form-control" id="inputExperience">
+          <input type="text" class="form-control" id="inputExperience" name="experience">
         </div>
         <div class="col-md-4">
           <label for="inputParent" class="form-label">Ф.И.О. родителя</label>
-          <input type="text" class="form-control" id="inputParent">
+          <input type="text" class="form-control" id="inputParent" name="parent">
         </div>
         <div class="col-md-3">
           <label for="inputMobile" class="form-label">Телефон</label>
-          <input type="text" class="form-control" id="inputMobile">
+          <input type="text" class="form-control" id="inputMobile" name="mobile">
         </div>
         <div class="col-md-4">
           <label for="inputEmail" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="inputEmail">
+          <input type="email" class="form-control" id="inputEmail" name="email">
         </div>
         <div data-netlify-recaptcha="true"></div>
         <div class="col-12 pt-3">
